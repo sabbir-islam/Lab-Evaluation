@@ -7,13 +7,76 @@
     <!-- tailwind link here  -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- daisy ui  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <main>
-      <div class="flex justify-center items-center mt-6">
-        <h1 class="text-5xl text-red-300">Welcome Home</h1>
+    <main class="w-[80%] mx-auto">
+      <div class="flex justify-center mt-10">
+        <h1 class="text-4xl font-bold text-gray-500">Welcome to the Website</h1>
+      </div>
+      <!-- table start here  -->
+      <div class="mt-20">
+        <div
+          class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100"
+        >
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Marks</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+      <!-- table end here  -->
+      <!-- form start here  -->
+      <div class="flex mt-20">
+        <form class="fieldset">
+          <label for="">Name</label>
+          <input
+            id="nameF"
+            type="text"
+            class="input"
+            placeholder="Enter your Name"
+          />
+          <label for="">ID</label>
+          <input
+            id="idF"
+            type="number"
+            class="input"
+            placeholder="Enter your Number"
+          />
+          <label for="">Marks</label>
+          <input
+            id="markF"
+            type="number"
+            class="input"
+            placeholder="Enter your Marks"
+          />
+          <button id="addBtn" class="btn">Add</button>
+        </form>
+      </div>
+      <!-- form end here  -->
+      <div class="">
+        <form action="">
+          <label for="">Marks</label>
+          <input
+            id="markF"
+            type="number"
+            class="input"
+            placeholder="Enter your Marks"
+          />
+        </form>
       </div>
     </main>
   </body>
+  <script src="index.js"></script>
 </html>
